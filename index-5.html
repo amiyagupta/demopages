@@ -6,10 +6,25 @@
     <script src="react-dom.production.min.js"></script>    
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div id="h1root"></div>
+    <div id="p1root"></div>
+    <div id="p2root"></div>
+    <script>
+        const h1 = React.createElement("h1", null, "Hello World");
+        const containerh1 = document.getElementById('h1root');
+        ReactDOM.render(h1, containerh1);
+    </script>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nunc non blandit massa enim nec dui. Nibh sit amet commodo nulla facilisi. Quis auctor elit sed vulputate mi sit. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Tellus mauris a diam maecenas sed enim ut sem viverra. Tincidunt tortor aliquam nulla facilisi. Ullamcorper morbi tincidunt ornare massa eget egestas. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Amet volutpat consequat mauris nunc. Turpis egestas sed tempus urna et pharetra. In hac habitasse platea dictumst vestibulum rhoncus. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in.</p>
+    <script>
+        const p1 = React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nunc non blandit massa enim nec dui. Nibh sit amet commodo nulla facilisi. Quis auctor elit sed vulputate mi sit. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Tellus mauris a diam maecenas sed enim ut sem viverra. Tincidunt tortor aliquam nulla facilisi. Ullamcorper morbi tincidunt ornare massa eget egestas. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Amet volutpat consequat mauris nunc. Turpis egestas sed tempus urna et pharetra. In hac habitasse platea dictumst vestibulum rhoncus. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in.");
+        const containerp1 = document.getElementById('p1root');
+        ReactDOM.render(p1, containerp1);
+    </script>
 
-    <p>Sagittis purus sit amet volutpat consequat mauris. Morbi leo urna molestie at elementum eu. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Id aliquet risus feugiat in ante metus dictum at. Hac habitasse platea dictumst vestibulum. Venenatis cras sed felis eget velit aliquet sagittis. Gravida arcu ac tortor dignissim. Vehicula ipsum a arcu cursus vitae congue. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Condimentum vitae sapien pellentesque habitant morbi tristique. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lobortis feugiat vivamus at augue eget arcu dictum varius. Libero enim sed faucibus turpis. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Fermentum leo vel orci porta non pulvinar neque. Neque sodales ut etiam sit amet nisl purus. Est placerat in egestas erat imperdiet sed euismod.</p>
+    <script>
+        const p2 = React.createElement("p", null, "Sagittis purus sit amet volutpat consequat mauris. Morbi leo urna molestie at elementum eu. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Id aliquet risus feugiat in ante metus dictum at. Hac habitasse platea dictumst vestibulum. Venenatis cras sed felis eget velit aliquet sagittis. Gravida arcu ac tortor dignissim. Vehicula ipsum a arcu cursus vitae congue. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Condimentum vitae sapien pellentesque habitant morbi tristique. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lobortis feugiat vivamus at augue eget arcu dictum varius. Libero enim sed faucibus turpis. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Fermentum leo vel orci porta non pulvinar neque. Neque sodales ut etiam sit amet nisl purus. Est placerat in egestas erat imperdiet sed euismod.");
+        const containerp2 = document.getElementById('p2root');
+        ReactDOM.render(p2, containerp2);
+    </script>
   </body>
 </html>
