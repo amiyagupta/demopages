@@ -1,6 +1,8 @@
 # demopages
 
-This is a set of simple HTML pages used to introduce key concepts related to performance analysis.
+This is a set of simple HTML pages used to introduce key concepts related to performance analysis. 
+
+[Repo](https://github.com/amiyagupta/demopages)
 
 ## Scenarios
 
