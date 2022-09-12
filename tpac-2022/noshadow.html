@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Element Timing - No Shadow DOM</title>
+        <script>
+            const observer = new PerformanceObserver((list) => {
+                let entries = list.getEntries().forEach((entry) => {
+                    console.log(entry);
+                });
+            });
+
+            observer.observe({ entryTypes: ["element"] });
+        </script>
+    </head>
+    <body>
+        <h1 elementtiming="h1">Heading</h1>
+        <p elementtiming="p">This is a paragraph</p>
+        <img src="./PIXNIO-317204.jpeg" height="1232px" width="1847px" elementtiming="img">
+    </body>
+</html>
