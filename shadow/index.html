@@ -1,0 +1,20 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>This is my Shadow Root Test Page</title>
+        <style>
+            body { background-color: green;}
+            p { background-color: yellow;}
+        </style>
+    </head>
+    <body>
+        <p>This page has a shadow roots. This paragraph is not in a shadow root.</p>
+        <div id="shadow">
+            <template shadowrootmode="open">
+                <link rel="stylesheet" type="text/css" href="./shadow-style.css">
+                <p>This paragraph is in a shadow root.</p>
+            </template>
+        </div>
+        <p>This paragraph is also not in a shadow root.</p>
+    </body>
+</html>
